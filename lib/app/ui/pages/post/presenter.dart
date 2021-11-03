@@ -12,7 +12,7 @@ class PostsPresenter extends Presenter {
   PostsPresenter(this._useCase);
 
   void onGetPosts() {
-    _useCase.execute(PostsObserver(this));
+    _useCase.execute(_PostsObserver(this));
   }
 
   @override
@@ -21,10 +21,10 @@ class PostsPresenter extends Presenter {
   }
 }
 
-class PostsObserver implements Observer<List<Post>> {
+class _PostsObserver implements Observer<List<Post>> {
   PostsPresenter _presenter;
 
-  PostsObserver(this._presenter);
+  _PostsObserver(this._presenter);
 
   void onComplete() {
     _presenter.onComplete();

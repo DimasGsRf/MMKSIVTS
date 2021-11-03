@@ -1,18 +1,22 @@
+import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:sfid_mobile/app/ui/pages/post/presenter.dart';
+import 'package:sfid_mobile/domains/post_domain.dart';
 import 'package:sfid_mobile/use_cases/post/get_posts_use_case.dart';
 
 import 'presenter.mocks.dart';
 
-@GenerateMocks([GetPostsUseCase])
+@GenerateMocks([GetPostsUseCase, Observer])
 void main() {
   group('PostsPresenter', () {
     late PostsPresenter presenter;
     late GetPostsUseCase useCase;
+    late Observer<List<Post>> observer;
 
     setUp(() {
+      observer = MockObserver();
       useCase = MockGetPostsUseCase();
       presenter = PostsPresenter(useCase);
     });
@@ -53,7 +57,6 @@ void main() {
       presenter.onSuccess = (posts) {};
 
       var execute = () {};
-      var observer = PostsObserver(presenter);
 
       when(useCase.execute(observer)).thenAnswer((_) => execute);
 

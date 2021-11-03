@@ -43,3 +43,24 @@ class MockGetPostsUseCase extends _i1.Mock implements _i3.GetPostsUseCase {
   void dispose() => super.noSuchMethod(Invocation.method(#dispose, []),
       returnValueForMissingStub: null);
 }
+
+/// A class which mocks [Observer].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockObserver<T> extends _i1.Mock implements _i6.Observer<T> {
+  MockObserver() {
+    _i1.throwOnMissingStub(this);
+  }
+
+  @override
+  void onNext(T? response) =>
+      super.noSuchMethod(Invocation.method(#onNext, [response]),
+          returnValueForMissingStub: null);
+  @override
+  void onComplete() => super.noSuchMethod(Invocation.method(#onComplete, []),
+      returnValueForMissingStub: null);
+  @override
+  void onError(dynamic e) =>
+      super.noSuchMethod(Invocation.method(#onError, [e]),
+          returnValueForMissingStub: null);
+}
