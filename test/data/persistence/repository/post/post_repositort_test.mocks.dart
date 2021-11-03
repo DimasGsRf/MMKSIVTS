@@ -3,10 +3,11 @@
 // Do not manually edit this file.
 
 import 'dart:async' as _i3;
+import 'dart:convert' as _i4;
 
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:sfid_mobile/app/repositories/api/post_repository.dart' as _i2;
-import 'package:sfid_mobile/domains/post_domain.dart' as _i4;
+import 'package:sfid_mobile/data/infrastructures/api_service_interface.dart'
+    as _i2;
 
 // ignore_for_file: avoid_redundant_argument_values
 // ignore_for_file: comment_references
@@ -14,17 +15,32 @@ import 'package:sfid_mobile/domains/post_domain.dart' as _i4;
 // ignore_for_file: prefer_const_constructors
 // ignore_for_file: unnecessary_parenthesis
 
-/// A class which mocks [PostApiRepository].
+/// A class which mocks [ApiServiceInterface].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockPostApiRepository extends _i1.Mock implements _i2.PostApiRepository {
-  MockPostApiRepository() {
+class MockApiServiceInterface extends _i1.Mock
+    implements _i2.ApiServiceInterface {
+  MockApiServiceInterface() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  _i3.Future<List<_i4.Post>> getPosts() =>
-      (super.noSuchMethod(Invocation.method(#getPosts, []),
-              returnValue: Future<List<_i4.Post>>.value(<_i4.Post>[]))
-          as _i3.Future<List<_i4.Post>>);
+  _i3.Future<dynamic> invokeHttp(dynamic url, _i2.RequestType? type,
+          {Map<String, String>? headers,
+          dynamic body,
+          Map<String, String>? params,
+          _i4.Encoding? encoding,
+          bool? needThrowError}) =>
+      (super.noSuchMethod(
+          Invocation.method(#invokeHttp, [
+            url,
+            type
+          ], {
+            #headers: headers,
+            #body: body,
+            #params: params,
+            #encoding: encoding,
+            #needThrowError: needThrowError
+          }),
+          returnValue: Future<dynamic>.value()) as _i3.Future<dynamic>);
 }

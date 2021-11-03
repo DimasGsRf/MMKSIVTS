@@ -2,29 +2,47 @@ import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
+import 'package:sfid_mobile/app/infrastructures/endpoints.dart';
 import 'package:sfid_mobile/app/repositories/api/post_repository.dart';
+import 'package:sfid_mobile/data/infrastructures/api_service_interface.dart';
+import 'package:sfid_mobile/data/persistences/mappers/post_mapper.dart';
+import 'package:sfid_mobile/data/persistences/repositories/contracts/post_repository.dart';
 import 'package:sfid_mobile/domains/post_domain.dart';
 
 import 'post_repositort_test.mocks.dart';
 
-@GenerateMocks([PostApiRepository])
+@GenerateMocks([ApiServiceInterface])
 void main() {
   group('PostApiRepository', () {
-    late MockPostApiRepository repository;
-    late List<Post> response;
+    late String baseUrl = 'https://jsonplaceholder.typicode.com/';
+    late ApiServiceInterface service;
+    late PostRepository repository;
+    late Endpoints endpoints;
+    late List<dynamic> response;
+    late PostMapper mapper;
 
     setUp(() {
-      repository = MockPostApiRepository();
+      endpoints = Endpoints(baseUrl);
+      mapper = PostMapper();
+      service = MockApiServiceInterface();
+      repository = PostApiRepository(service, endpoints, mapper);
       response = List.generate(
         10,
-        (i) => Post(title: 'Post $i', body: 'Body of Post $i'),
+        (i) => <String, dynamic>{
+          'userId': i,
+          'id': 1,
+          'title': 'lorem ipsum dolor',
+          'body': 'lorem ipsum dolor sit amet',
+        },
       );
     });
 
     test(
       'should return List of Post when calling getPosts api request',
       () async {
-        when(repository.getPosts()).thenAnswer((_) async => response);
+        when(
+          service.invokeHttp(endpoints.posts(), RequestType.GET),
+        ).thenAnswer((_) async => response);
 
         var posts = await repository.getPosts();
 
@@ -38,7 +56,9 @@ void main() {
       () async {
         var error = Exception('error occurred');
 
-        when(repository.getPosts()).thenThrow(error);
+        when(
+          service.invokeHttp(endpoints.posts(), RequestType.GET),
+        ).thenThrow(error);
 
         expect(() => repository.getPosts(), throwsException);
       },
@@ -49,7 +69,9 @@ void main() {
       () async {
         var error = DioError(requestOptions: RequestOptions(path: '/posts'));
 
-        when(repository.getPosts()).thenThrow(error);
+        when(
+          service.invokeHttp(endpoints.posts(), RequestType.GET),
+        ).thenThrow(error);
 
         try {
           await repository.getPosts();
