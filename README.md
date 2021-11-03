@@ -25,14 +25,20 @@ use tag version for rollback
 https://pub.dev/packages/flutter_clean_architecture
 https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 
-###Please Write using Clean Code convention
+### Please Write using Clean Code convention
+
+### Unit Test
+  Running unit test first, before running this project.
+
+```
+flutter test
+```
 
 #### Requirements
   - Flutter Version : 2.2.0
   - Don't forget to run `flutter pub get`
 
 ### Convetions and MUST DOs
-
 
 #### Languange and Localization
 - Every text or string like informations, messages, etc. should be registered inside `lib/app/ui/res/string` and register them with key naming format `snake_case`.
