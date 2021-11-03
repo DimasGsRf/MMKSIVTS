@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>720059293161-hgsd1tui2i2d1sphd6l0496nu3919r7v.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.720059293161-hgsd1tui2i2d1sphd6l0496nu3919r7v</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAlKiff49t6J6lUuSOozGRfFYqcNymsn8I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>720059293161</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>id.mitsubishimotors.sfiddevs</string>
+	<key>PROJECT_ID</key>
+	<string>sfid-mobile-dev</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sfid-mobile-dev.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:720059293161:ios:b6ec5d7158c1b9a859bf78</string>
+	<key>DATABASE_URL</key>
+	<string>https://sfid-mobile-dev.firebaseio.com</string>
+</dict>
+</plist>

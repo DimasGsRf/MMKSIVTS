@@ -1,0 +1,159 @@
+name: sfid_mobile
+description: A new Flutter project.
+publish_to: none
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 2.0.0+40
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  auto_size_text: 3.0.0-nullsafety.0
+  barcode_widget: 2.0.1
+  basic_utils: 3.3.3
+  cached_network_image: 3.1.0
+  carousel_slider: 4.0.0
+  chewie:
+    git:
+      url: https://github.com/abdur-rohman2883/chewie
+      ref: null-safety
+  video_player: 2.1.12
+  connectivity: 3.0.6
+  cupertino_icons: 1.0.3
+  device_info: 2.0.2
+  dio_http_cache: 0.3.0
+  dio: 4.0.0
+  event_bus: 2.0.0
+  firebase_analytics: 8.2.0
+  firebase_core: 1.4.0
+  firebase_crashlytics: 2.1.1
+  firebase_messaging: 10.0.4
+  firebase_remote_config: 0.10.0+3
+  another_flushbar: 1.10.24
+  flutter_clean_architecture: 5.0.0
+  flutter_dotenv: 5.0.0
+  flutter_launcher_icons: 0.9.1
+  flutter_local_notifications: 6.1.0
+  flutter_screenutil: 5.0.0+2
+  image_cropper: 1.4.1
+  image_picker: 0.8.2
+  injector: 2.0.0
+  intl: 0.17.0
+  numberpicker: 2.1.1
+  logging: 1.0.1
+  package_info: 2.0.2
+  path_provider: 2.0.2
+  network_to_file_image: 3.0.0
+  syncfusion_flutter_pdfviewer: 19.2.49-beta
+  flutter_barcode_scanner: 2.0.0-nullsafety.0
+  permission_handler: 8.1.4+1
+  pin_code_text_field: 1.8.0
+  sn_progress_dialog: 1.0.2
+  pull_to_refresh: 2.0.0
+  shared_preferences: 2.0.6
+  sqflite: 2.0.0+3
+  timeago: 3.1.0
+  transparent_image: 2.0.0
+  url_launcher: 6.0.9
+  validators: 3.0.0
+  webview_flutter: 2.0.10
+  stream_transform: 2.0.0
+  timelines: 0.1.0
+  flutter_widget_from_html_core: 0.6.1+4
+  photo_view: 0.12.0
+  flutter_downloader: 1.6.1
+  qr_code_scanner: 0.5.2
+  encrypt: 5.0.0
+  flutter_svg: 0.22.0
+  fluttercontactpicker: 4.5.1
+  dotted_border: 2.0.0+1
+  flutter_slidable: 0.6.0
+  camera_camera: 2.0.2
+  add_2_calendar: 2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  gen_lang:
+    git:
+      url: https://github.com/abdur-rohman2883/gen_lang
+      ref: null-safety
+  mockito: 5.0.10
+  build_runner: 2.0.0
+
+flutter_icons:
+  image_path_android: 'lib/app/ui/assets/icons/android_icon_launcher.png'
+  image_path_ios: 'lib/app/ui/assets/icons/iOS_icon_launcher.png'
+  android: true
+  ios: true
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - lib/app/ui/assets/images/
+    - lib/app/ui/assets/icons/
+    - lib/app/ui/assets/misc/
+    - .env
+  #  - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+    - family: MMC
+      fonts:
+        - asset: lib/app/ui/assets/fonts/MMC-Regular.otf
+        - asset: lib/app/ui/assets/fonts/MMC-Bold.otf
+        - asset: lib/app/ui/assets/fonts/MMC-Medium.otf
+          weight: 700
+    - family: MMCOFFICE
+      fonts:
+        - asset: lib/app/ui/assets/fonts/MMCOFFICE-Regular.ttf
+        - asset: lib/app/ui/assets/fonts/MMCOFFICE-Bold.ttf
+        - asset: lib/app/ui/assets/fonts/MMCOFFICE-Medium.ttf
+          weight: 700

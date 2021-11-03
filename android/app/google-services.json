@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "720059293161",
+    "firebase_url": "https://sfid-mobile-dev.firebaseio.com",
+    "project_id": "sfid-mobile-dev",
+    "storage_bucket": "sfid-mobile-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720059293161:android:55ce633ff454d2b859bf78",
+        "android_client_info": {
+          "package_name": "com.mitsubishimotors.sfid.prod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720059293161-osb9d02g9iakl6htluaslh7nb3mmvira.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZTb83fLMuiRNKCfZrQaRuGYhEuhbbqWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720059293161-osb9d02g9iakl6htluaslh7nb3mmvira.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "720059293161-1d3136bj37t3430mnbj731u107hsva9l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "id.mitsubishimotors.sfiddev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720059293161:android:02646937ffcb065759bf78",
+        "android_client_info": {
+          "package_name": "id.mitsubishimotors.sfid.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720059293161-osb9d02g9iakl6htluaslh7nb3mmvira.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZTb83fLMuiRNKCfZrQaRuGYhEuhbbqWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720059293161-osb9d02g9iakl6htluaslh7nb3mmvira.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "720059293161-1d3136bj37t3430mnbj731u107hsva9l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "id.mitsubishimotors.sfiddev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
