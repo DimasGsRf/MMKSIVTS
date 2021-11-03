@@ -22,7 +22,7 @@ void main() {
 
     test('Should return List of Post when executing use case', () async {
       var posts = List.generate(10, (_) => Post(title: 'title', body: 'body'));
-      var observer = _SuccessOberver();
+      var observer = _SuccessObserver();
 
       when(repository.getPosts()).thenAnswer((_) async => posts);
 
@@ -31,7 +31,7 @@ void main() {
 
     test('Should return Empty List of Post when executing use case', () async {
       var posts = <Post>[];
-      var observer = _EmptyOberver();
+      var observer = _EmptyObserver();
 
       when(repository.getPosts()).thenAnswer((_) async => posts);
 
@@ -40,7 +40,7 @@ void main() {
 
     test('Should return Null when executing use case', () async {
       var posts;
-      var observer = _NullOberver();
+      var observer = _NullObserver();
 
       when(repository.getPosts()).thenAnswer((_) async => posts);
 
@@ -49,7 +49,7 @@ void main() {
 
     test('Should return Exception when executing use case', () async {
       var exception = Exception('Error ocurred');
-      var observer = _ErrorOberver();
+      var observer = _ErrorObserver();
 
       when(repository.getPosts()).thenThrow(exception);
 
@@ -58,7 +58,7 @@ void main() {
 
     test('Should return DioError when executing use case', () async {
       var exception = DioError(requestOptions: RequestOptions(path: '/posts'));
-      var observer = _DioErrorOberver();
+      var observer = _DioErrorObserver();
 
       when(repository.getPosts()).thenThrow(exception);
 
@@ -78,7 +78,7 @@ abstract class _Observer implements Observer<List<Post>> {
   void onNext(List<Post>? response) {}
 }
 
-class _SuccessOberver extends _Observer {
+class _SuccessObserver extends _Observer {
   @override
   void onNext(List<Post>? response) {
     expect(response, isNotNull);
@@ -86,28 +86,28 @@ class _SuccessOberver extends _Observer {
   }
 }
 
-class _EmptyOberver extends _Observer {
+class _EmptyObserver extends _Observer {
   @override
   void onNext(List<Post>? response) {
     expect(response?.isNotEmpty, false);
   }
 }
 
-class _NullOberver extends _Observer {
+class _NullObserver extends _Observer {
   @override
   void onNext(List<Post>? response) {
     expect(response, isNull);
   }
 }
 
-class _ErrorOberver extends _Observer {
+class _ErrorObserver extends _Observer {
   @override
   void onError(e) {
     expect(e, isInstanceOf<Exception>());
   }
 }
 
-class _DioErrorOberver extends _Observer {
+class _DioErrorObserver extends _Observer {
   @override
   void onError(e) {
     expect(e, isInstanceOf<DioError>());
