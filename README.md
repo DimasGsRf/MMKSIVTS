@@ -21,26 +21,26 @@ Developement -> Staging -> Production
 ## Rollback
 use tag version for rollback
 
-### This project implementing [Flutter Clean Architecture]
+## This project implementing [Flutter Clean Architecture]
 https://pub.dev/packages/flutter_clean_architecture
 https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 
-### Please Write using Clean Code convention
+## Please Write using Clean Code convention
 
-### Unit Test
+## Unit Test
   Running unit test first, before running this project.
 
 ```
 flutter test
 ```
 
-#### Requirements
+## Requirements
   - Flutter Version : 2.2.0
   - Don't forget to run `flutter pub get`
 
-### Convetions and MUST DOs
+## Convetions and MUST DOs
 
-#### Languange and Localization
+## Languange and Localization
 - Every text or string like informations, messages, etc. should be registered inside `lib/app/ui/res/string` and register them with key naming format `snake_case`.
 - After all registered then run `flutter pub run gen_lang:generate --source-dir=lib/app/ui/res/string --output-dir=lib/app/ui/res/generated --template-locale=id`
 - After done you can use the registered string like example: `S.of(context).login_error_message`
