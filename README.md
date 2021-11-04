@@ -1,7 +1,6 @@
 # SFID Mobile
 
 ## Branching
-
 Developement -> Staging -> Production
 1. newproduction : released on Play Store or App Store [Production]
 2. staging : use production setting and environment, but not released yet [Staging-v2.0.2]
@@ -9,7 +8,6 @@ Developement -> Staging -> Production
 4. operation : merge to this branch to handle change request [OPR-Payroll]
 
 ## Yang Perlu di perhatikan saat Ubah setting environment
-
 1. check version di pubspeck.yaml, update versionnya
 2. pastikan url di .env sudah sesuai
 4. file google_service.json gunakan sesuai environment
@@ -21,7 +19,6 @@ Developement -> Staging -> Production
 10. setting block unblock untuk capture screen
 
 ## Rollback
-
 Use tag version for rollback
 
 ## This project implementing [Flutter Clean Architecture]
@@ -32,7 +29,7 @@ Use tag version for rollback
 ## Please Write using Clean Code convention
 
 ## Unit Test
-  Running unit test first, before running this project.
+Running unit test first, before running this project.
 
   ```
   flutter pub run build_runner build
@@ -44,6 +41,7 @@ Use tag version for rollback
   - Don't forget to run `flutter pub get`
 
 ## Convetions and MUST DOs
+https://dart-lang.github.io/linter/lints/
 
 ## Languange and Localization
 - Every text or string like informations, messages, etc. should be registered inside `lib/app/ui/res/string` and register them with key naming format `snake_case`.
@@ -51,4 +49,4 @@ Use tag version for rollback
 - After done you can use the registered string like example: `S.of(context).login_error_message`
 - Convetions for naming key: `{pages}_{intention/functionality}`
 
-Last update by: Luthfi
+Last update by: Abdur Rohman
