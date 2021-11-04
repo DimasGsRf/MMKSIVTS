@@ -1,0 +1,100 @@
+name: Flutter CI with Github Actions on SFID
+
+on:
+  pull_request:
+    branches:
+      - master
+
+env:
+  java_version: "11.x"
+  flutter_channel: "stable"
+
+jobs:
+  test:
+    runs-on: macos-11
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-java@v1
+        with:
+          java-version: ${{ env.java_version }}
+
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v1
+        id: flutter-pub-cache
+        with:
+          path: /opt/hostedtoolcache/flutter
+          key: ${{ runner.OS }}-flutter-install-cache-${{ hashFiles('**/pubspec*') }}
+          restore-keys: |
+            ${{ runner.OS }}-flutter-install-cache-
+
+      - uses: subosito/flutter-action@v1.5.3
+        with:
+          channel: ${{ env.flutter_channel }}
+
+      - name: Run flutter test
+        run: |
+          flutter pub get
+          flutter pub run build_runner build --delete-conflicting-outputs
+          flutter test
+
+  build-ios:
+    runs-on: macos-11
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v1
+        id: flutter-pub-cache
+        with:
+          path: /opt/hostedtoolcache/flutter
+          key: ${{ runner.OS }}-flutter-install-cache-${{ hashFiles('**/pubspec*') }}
+          restore-keys: |
+            ${{ runner.OS }}-flutter-install-cache-
+
+      - uses: subosito/flutter-action@v1.5.3
+        with:
+          channel: ${{ env.flutter_channel }}
+
+      - name: Build iOS with --no-codesign option
+        run: flutter build ios --no-codesign
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: flutter-build-ipa
+          path: |
+            build/ios/iphoneos
+
+  build-android:
+    runs-on: macos-11
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-java@v1
+        with:
+          java-version: ${{ env.java_version }}
+
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v1
+        id: flutter-pub-cache
+        with:
+          path: /opt/hostedtoolcache/flutter
+          key: ${{ runner.OS }}-flutter-install-cache-${{ hashFiles('**/pubspec*') }}
+          restore-keys: |
+            ${{ runner.OS }}-flutter-install-cache-
+
+      - uses: subosito/flutter-action@v1.5.3
+        with:
+          channel: ${{ env.flutter_channel }}
+
+      - name: Build android
+        run: flutter build apk
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: flutter-build-apk
+          path: |
+            ./build/app/outputs/flutter-apk/app-release.apk
