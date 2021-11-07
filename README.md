@@ -1,5 +1,7 @@
 # SFID Mobile
 
+[![Flutter CI with Github Actions on SFID](https://github.com/abdur-rohman2883/SOIDMobile/actions/workflows/actions.yml/badge.svg)](https://github.com/abdur-rohman2883/SOIDMobile/actions/workflows/actions.yml)
+
 ## Branching
 Developement -> Staging -> Production
 1. newproduction : released on Play Store or App Store [Production]
