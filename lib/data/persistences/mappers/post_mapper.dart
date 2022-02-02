@@ -1,5 +1,5 @@
-import '../../../domains/post_domain.dart';
-import '../../../app/infrastructures/contracts/base_mapper.dart';
+import 'package:sfid_mobile/app/infrastructures/contracts/base_mapper.dart';
+import 'package:sfid_mobile/domains/post_domain.dart';
 
 class PostMapper extends BaseMapper<Post> {
   @override
