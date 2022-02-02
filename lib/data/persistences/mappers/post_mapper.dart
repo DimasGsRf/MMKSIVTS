@@ -1,5 +1,5 @@
 import '../../../domains/post_domain.dart';
-import 'base_mapper.dart';
+import '../../../app/infrastructures/contracts/base_mapper.dart';
 
 class PostMapper extends BaseMapper<Post> {
   @override
