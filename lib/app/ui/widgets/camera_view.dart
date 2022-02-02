@@ -1,9 +1,7 @@
 import 'dart:async';
 
 import 'package:camera_camera/camera_camera.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:sfid_mobile/app/misc/constants.dart';
 
 List<CameraDescription>? camerasList;
@@ -28,9 +26,15 @@ class _CameraViewState extends State<CameraView> {
 
   void initCamera() async {
     camerasList = await availableCameras();
-    controller = CameraController(camerasList!.first, ResolutionPreset.medium,
-        imageFormatGroup: ImageFormatGroup.jpeg, enableAudio: false);
+    controller = CameraController(
+      camerasList!.first,
+      ResolutionPreset.medium,
+      imageFormatGroup: ImageFormatGroup.jpeg,
+      enableAudio: false,
+    );
+
     await controller?.initialize();
+
     if (mounted) {
       setState(() {});
     }

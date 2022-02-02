@@ -21,7 +21,7 @@ class PostApiRepository implements PostRepository {
       ) as List<dynamic>;
 
       for (var post in response) {
-        posts.add(_mapper.toDomain(post));
+        posts.add(_mapper.convert(post));
       }
 
       return posts;

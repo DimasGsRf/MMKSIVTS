@@ -14,7 +14,7 @@ publish_to: none
 version: 2.0.0+40
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -95,8 +95,8 @@ dev_dependencies:
   build_runner: 2.0.0
 
 flutter_icons:
-  image_path_android: 'lib/app/ui/assets/icons/android_icon_launcher.png'
-  image_path_ios: 'lib/app/ui/assets/icons/iOS_icon_launcher.png'
+  image_path_android: "lib/app/ui/assets/icons/android_icon_launcher.png"
+  image_path_ios: "lib/app/ui/assets/icons/iOS_icon_launcher.png"
   android: true
   ios: true
 
@@ -112,8 +112,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - lib/app/ui/assets/images/
-    - lib/app/ui/assets/icons/
+    # - lib/app/ui/assets/images/
+    # - lib/app/ui/assets/icons/
     - lib/app/ui/assets/misc/
     - .env
   #  - images/a_dot_ham.jpeg

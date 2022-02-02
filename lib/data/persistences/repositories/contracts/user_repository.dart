@@ -1,5 +1,5 @@
-import 'package:sfid_mobile/data/payload/contracts/user_request.dart';
+import 'package:sfid_mobile/data/payload/contracts/request_mapper.dart';
 
 abstract class UserRepository {
-  Future<bool> updateFirebaseToken(UpdateFirebaseTokenRequestInterface request);
+  Future<bool> updateFirebaseToken(JsonRequest request);
 }

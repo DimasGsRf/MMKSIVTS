@@ -18,7 +18,7 @@ void main() {
     });
 
     test('should return post domain from response', () {
-      var domain = mapper.toDomain(response);
+      var domain = mapper.convert(response);
 
       expect(domain, isA<Post>());
       expect(domain.title, response['title']);

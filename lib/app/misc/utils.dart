@@ -9,7 +9,6 @@ import 'package:flutter/services.dart';
 import 'package:basic_utils/basic_utils.dart';
 import 'package:device_info/device_info.dart';
 import 'package:package_info/package_info.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:sfid_mobile/app/infrastructures/app_component.dart';
 import 'package:sfid_mobile/app/infrastructures/event/error.dart';
 import 'package:sfid_mobile/app/misc/string_utils.dart' as UtilsString;

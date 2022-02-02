@@ -1,11 +1,11 @@
-import 'package:sfid_mobile/data/payload/contracts/user_request.dart';
+import 'package:sfid_mobile/data/payload/contracts/request_mapper.dart';
 
-class UpdateFirebaseTokenApiRequest
-    extends UpdateFirebaseTokenRequestInterface {
+class UpdateFirebaseTokenApiRequest extends JsonRequest {
   String _token;
 
   UpdateFirebaseTokenApiRequest(this._token);
 
+  @override
   Map<String, dynamic> toJson() {
     var data = {"token": _token};
 

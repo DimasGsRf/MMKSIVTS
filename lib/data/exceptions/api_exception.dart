@@ -1,7 +1,6 @@
 class APIException implements Exception {
-  final String message;
+  final String message, statusText;
   final int statusCode;
-  final String statusText;
 
   APIException(this.message, this.statusCode, this.statusText);
 }

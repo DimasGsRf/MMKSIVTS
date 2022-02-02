@@ -11,7 +11,7 @@ import 'package:sfid_mobile/app/misc/view_utils.dart';
 
 class BaseController extends Controller {
   late EventBus _eventBus = AppComponent.getInjector().get<EventBus>();
-  
+
   bool _internetAvailable = true;
   bool get internetAvailable => _internetAvailable;
 
@@ -43,7 +43,6 @@ class BaseController extends Controller {
       } else {
         internetAvailabilityCycle(false);
         dismissLoading();
-        refreshUI();
       }
     });
   }
@@ -93,7 +92,7 @@ class BaseController extends Controller {
   }
 
   void delayedRefresh({int duration = 1}) {
-    Future.delayed(new Duration(seconds: duration), refreshUI);
+    Future.delayed(Duration(seconds: duration), refreshUI);
   }
 
   void resetPage() {

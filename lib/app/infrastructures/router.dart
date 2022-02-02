@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Router {
@@ -18,6 +17,7 @@ class Router {
     }
   }
 
+  // TODO: unused for right now
   MaterialPageRoute _buildRoute(RouteSettings? settings, Widget builder) {
     return new MaterialPageRoute(
       settings: settings,
