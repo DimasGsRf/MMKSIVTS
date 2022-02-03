@@ -2,12 +2,12 @@ import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:soid_mobile/app/infrastructures/endpoints.dart';
-import 'package:soid_mobile/app/repositories/api/post_repository.dart';
-import 'package:soid_mobile/data/infrastructures/api_service_interface.dart';
-import 'package:soid_mobile/data/persistences/mappers/post_mapper.dart';
-import 'package:soid_mobile/data/persistences/repositories/contracts/post_repository.dart';
-import 'package:soid_mobile/domains/post_domain.dart';
+import 'package:mmksi_vts_mobile/app/infrastructures/endpoints.dart';
+import 'package:mmksi_vts_mobile/app/repositories/api/post_repository.dart';
+import 'package:mmksi_vts_mobile/data/infrastructures/api_service_interface.dart';
+import 'package:mmksi_vts_mobile/data/persistences/mappers/post_mapper.dart';
+import 'package:mmksi_vts_mobile/data/persistences/repositories/contracts/post_repository.dart';
+import 'package:mmksi_vts_mobile/domains/post_domain.dart';
 
 import 'post_repositort_test.mocks.dart';
 

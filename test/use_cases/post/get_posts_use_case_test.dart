@@ -3,9 +3,9 @@ import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:soid_mobile/app/repositories/api/post_repository.dart';
-import 'package:soid_mobile/domains/post_domain.dart';
-import 'package:soid_mobile/use_cases/post/get_posts_use_case.dart';
+import 'package:mmksi_vts_mobile/app/repositories/api/post_repository.dart';
+import 'package:mmksi_vts_mobile/domains/post_domain.dart';
+import 'package:mmksi_vts_mobile/use_cases/post/get_posts_use_case.dart';
 
 import 'get_posts_use_case_test.mocks.dart';
 

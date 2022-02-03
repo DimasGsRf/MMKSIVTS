@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:soid_mobile/app/misc/constants.dart';
+import 'package:mmksi_vts_mobile/app/misc/constants.dart';
 
 class CommonLoading extends StatelessWidget {
   final Color color;

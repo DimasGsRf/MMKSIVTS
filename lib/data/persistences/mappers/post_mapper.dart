@@ -1,5 +1,5 @@
-import 'package:soid_mobile/app/infrastructures/contracts/base_mapper.dart';
-import 'package:soid_mobile/domains/post_domain.dart';
+import 'package:mmksi_vts_mobile/app/infrastructures/contracts/base_mapper.dart';
+import 'package:mmksi_vts_mobile/domains/post_domain.dart';
 
 class PostMapper extends BaseMapper<Post> {
   @override

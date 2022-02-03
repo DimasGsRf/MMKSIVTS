@@ -1,10 +1,10 @@
 import 'package:injector/injector.dart';
-import 'package:soid_mobile/app/infrastructures/di/controller_module.dart';
-import 'package:soid_mobile/app/infrastructures/di/mapper_module.dart';
-import 'package:soid_mobile/app/infrastructures/di/presenter_module.dart';
-import 'package:soid_mobile/app/infrastructures/di/repository_module.dart';
-import 'package:soid_mobile/app/infrastructures/di/root_module.dart';
-import 'package:soid_mobile/app/infrastructures/di/use_case_module.dart';
+import 'package:mmksi_vts_mobile/app/infrastructures/di/controller_module.dart';
+import 'package:mmksi_vts_mobile/app/infrastructures/di/mapper_module.dart';
+import 'package:mmksi_vts_mobile/app/infrastructures/di/presenter_module.dart';
+import 'package:mmksi_vts_mobile/app/infrastructures/di/repository_module.dart';
+import 'package:mmksi_vts_mobile/app/infrastructures/di/root_module.dart';
+import 'package:mmksi_vts_mobile/app/infrastructures/di/use_case_module.dart';
 
 // Commonly here to declare dependency injection
 class AppComponent {

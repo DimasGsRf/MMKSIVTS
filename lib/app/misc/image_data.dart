@@ -1,4 +1,4 @@
-import 'package:soid_mobile/app/misc/constants.dart';
+import 'package:mmksi_vts_mobile/app/misc/constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ImageData {

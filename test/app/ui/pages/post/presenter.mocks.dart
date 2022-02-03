@@ -7,8 +7,8 @@ import 'dart:async' as _i4;
 import 'package:flutter_clean_architecture/src/observer.dart' as _i6;
 import 'package:logging/src/logger.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:soid_mobile/domains/post_domain.dart' as _i5;
-import 'package:soid_mobile/use_cases/post/get_posts_use_case.dart' as _i3;
+import 'package:mmksi_vts_mobile/domains/post_domain.dart' as _i5;
+import 'package:mmksi_vts_mobile/use_cases/post/get_posts_use_case.dart' as _i3;
 
 // ignore_for_file: avoid_redundant_argument_values
 // ignore_for_file: comment_references

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:soid_mobile/app/misc/constants.dart';
-import 'package:soid_mobile/app/ui/widgets/expansion_tile.dart';
+import 'package:mmksi_vts_mobile/app/misc/constants.dart';
+import 'package:mmksi_vts_mobile/app/ui/widgets/expansion_tile.dart';
 
 class CardCommon extends StatelessWidget {
   /// HATI-HATI KETIKA MENGEDIT REUSABLE WIDGET/COMPONENT

@@ -1,6 +1,6 @@
-import 'package:soid_mobile/app/misc/constants.dart';
-import 'package:soid_mobile/data/infrastructures/encrypter_interface.dart';
-import 'package:soid_mobile/domains/user_domain.dart';
+import 'package:mmksi_vts_mobile/app/misc/constants.dart';
+import 'package:mmksi_vts_mobile/data/infrastructures/encrypter_interface.dart';
+import 'package:mmksi_vts_mobile/domains/user_domain.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserData {

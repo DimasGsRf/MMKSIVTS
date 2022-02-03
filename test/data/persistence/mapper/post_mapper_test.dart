@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:soid_mobile/data/persistences/mappers/post_mapper.dart';
-import 'package:soid_mobile/domains/post_domain.dart';
+import 'package:mmksi_vts_mobile/data/persistences/mappers/post_mapper.dart';
+import 'package:mmksi_vts_mobile/domains/post_domain.dart';
 
 void main() {
   group('PostMapper', () {

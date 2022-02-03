@@ -1,6 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:soid_mobile/app/misc/constants.dart';
+import 'package:mmksi_vts_mobile/app/misc/constants.dart';
 
 class NotificationTile extends StatelessWidget {
   final String? title, subtitle, trailing, fileName;

@@ -1,5 +1,5 @@
 import 'package:encrypt/encrypt.dart' as AESEncryptor;
-import 'package:soid_mobile/data/infrastructures/encrypter_interface.dart';
+import 'package:mmksi_vts_mobile/data/infrastructures/encrypter_interface.dart';
 
 class Encrypter implements EncrypterInterface {
   @override

@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:camera_camera/camera_camera.dart';
 import 'package:flutter/material.dart';
-import 'package:soid_mobile/app/misc/constants.dart';
+import 'package:mmksi_vts_mobile/app/misc/constants.dart';
 
 List<CameraDescription>? camerasList;
 

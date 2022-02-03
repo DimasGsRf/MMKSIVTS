@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
-import 'package:soid_mobile/app/infrastructures/contracts/base_controller.dart';
+import 'package:mmksi_vts_mobile/app/infrastructures/contracts/base_controller.dart';
 
 abstract class BaseWidget<Con extends BaseController> extends View {
   final Con _controller;

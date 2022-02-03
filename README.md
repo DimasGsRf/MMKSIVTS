@@ -1,4 +1,4 @@
-# SFID Mobile
+# MMKSI VTS Mobile
 
 [![Flutter CI with Github Actions on SFID](https://github.com/abdur-rohman2883/SOIDMobile/actions/workflows/actions.yml/badge.svg)](https://github.com/abdur-rohman2883/SOIDMobile/actions/workflows/actions.yml)
 
@@ -20,7 +20,7 @@ Developement -> Staging -> Production
 5. package name di sesuaikan
 6. root module log interceptor saat production dimatikan
 7. naikin flutter version code sama naikin flutter version name
-8. nama aplikasi [SFID Mobile] <-> [SFID Test]
+8. nama aplikasi [MMKSI VTS Mobile Mobile] <-> [MMKSI VTS Mobile Test]
 9. setting block unblock untuk capture screen
 
 ## Rollback
