@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sfid_mobile/app/misc/constants.dart';
-import 'package:sfid_mobile/app/ui/res/generated/i18n.dart';
-import 'package:sfid_mobile/app/ui/widgets/network_image_cache.dart';
+import 'package:soid_mobile/app/misc/constants.dart';
+import 'package:soid_mobile/app/ui/res/generated/i18n.dart';
+import 'package:soid_mobile/app/ui/widgets/network_image_cache.dart';
 
 class CustomDialog {
   /// HATI-HATI KETIKA MENGEDIT REUSABLE WIDGET/COMPONENT

@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
-import 'package:sfid_mobile/app/misc/constants.dart';
+import 'package:soid_mobile/app/misc/constants.dart';
 
 class QrCodeScanner extends StatefulWidget {
   final double scanArea;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
-import 'package:sfid_mobile/app/misc/utils.dart';
+import 'package:soid_mobile/app/misc/utils.dart';
 
 class DownloaderMixins {
   download(String url, BuildContext context) async {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
-import 'package:sfid_mobile/app/infrastructures/app_component.dart';
-import 'package:sfid_mobile/app/ui/pages/post/controller.dart';
-import 'package:sfid_mobile/app/ui/widgets/app_bar.dart';
-import 'package:sfid_mobile/app/ui/widgets/loading.dart';
+import 'package:soid_mobile/app/infrastructures/app_component.dart';
+import 'package:soid_mobile/app/ui/pages/post/controller.dart';
+import 'package:soid_mobile/app/ui/widgets/app_bar.dart';
+import 'package:soid_mobile/app/ui/widgets/loading.dart';
 
 class PostsPage extends View {
   @override

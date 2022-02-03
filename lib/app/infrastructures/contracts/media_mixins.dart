@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sfid_mobile/app/misc/route_arguments.dart';
-import 'package:sfid_mobile/app/ui/pages/pages.dart';
+import 'package:soid_mobile/app/misc/route_arguments.dart';
+import 'package:soid_mobile/app/ui/pages/pages.dart';
 
 class MediaMixins {
   void showDetail(

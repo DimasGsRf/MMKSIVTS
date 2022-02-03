@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sfid_mobile/app/misc/constants.dart';
+import 'package:soid_mobile/app/misc/constants.dart';
 
 class CommonWatermark extends StatelessWidget {
   final String? text;

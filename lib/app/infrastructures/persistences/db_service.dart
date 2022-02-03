@@ -1,4 +1,4 @@
-import 'package:sfid_mobile/data/infrastructures/db_service_interface.dart';
+import 'package:soid_mobile/data/infrastructures/db_service_interface.dart';
 import 'package:sqflite/sqlite_api.dart';
 
 class DBService extends DBServiceInterface {

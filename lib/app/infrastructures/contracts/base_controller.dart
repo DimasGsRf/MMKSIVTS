@@ -2,12 +2,12 @@ import 'package:connectivity/connectivity.dart';
 import 'package:event_bus/event_bus.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
-import 'package:sfid_mobile/app/infrastructures/app_component.dart';
-import 'package:sfid_mobile/app/infrastructures/event/connection.dart';
-import 'package:sfid_mobile/app/infrastructures/event/error.dart';
-import 'package:sfid_mobile/app/infrastructures/event/reset_ui.dart';
-import 'package:sfid_mobile/app/misc/route_arguments.dart';
-import 'package:sfid_mobile/app/misc/view_utils.dart';
+import 'package:soid_mobile/app/infrastructures/app_component.dart';
+import 'package:soid_mobile/app/infrastructures/event/connection.dart';
+import 'package:soid_mobile/app/infrastructures/event/error.dart';
+import 'package:soid_mobile/app/infrastructures/event/reset_ui.dart';
+import 'package:soid_mobile/app/misc/route_arguments.dart';
+import 'package:soid_mobile/app/misc/view_utils.dart';
 
 class BaseController extends Controller {
   late EventBus _eventBus = AppComponent.getInjector().get<EventBus>();

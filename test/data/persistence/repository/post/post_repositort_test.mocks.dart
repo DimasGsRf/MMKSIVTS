@@ -6,7 +6,7 @@ import 'dart:async' as _i3;
 import 'dart:convert' as _i4;
 
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:sfid_mobile/data/infrastructures/api_service_interface.dart'
+import 'package:soid_mobile/data/infrastructures/api_service_interface.dart'
     as _i2;
 
 // ignore_for_file: avoid_redundant_argument_values

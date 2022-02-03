@@ -1,6 +1,6 @@
 import 'package:intl/intl.dart';
 import 'package:timeago/timeago.dart' as timeago;
-import 'package:sfid_mobile/data/infrastructures/time_converter_interface.dart';
+import 'package:soid_mobile/data/infrastructures/time_converter_interface.dart';
 
 class TimeConverter extends TimeConverterInterface {
   TimeConverter() {

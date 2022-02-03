@@ -1,4 +1,4 @@
-import 'package:sfid_mobile/data/payload/contracts/request_mapper.dart';
+import 'package:soid_mobile/data/payload/contracts/request_mapper.dart';
 
 class UpdateFirebaseTokenApiRequest extends JsonRequest {
   String _token;

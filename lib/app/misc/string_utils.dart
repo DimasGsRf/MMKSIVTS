@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sfid_mobile/app/ui/res/generated/i18n.dart';
+import 'package:soid_mobile/app/ui/res/generated/i18n.dart';
 
 class StringUtils {
   static String getAlertContent(

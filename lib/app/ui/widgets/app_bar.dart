@@ -2,8 +2,8 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:sfid_mobile/app/misc/constants.dart';
-import 'package:sfid_mobile/app/ui/pages/pages.dart';
+import 'package:soid_mobile/app/misc/constants.dart';
+import 'package:soid_mobile/app/ui/pages/pages.dart';
 
 typedef VoidFutureCallBack = Future<void> Function();
 

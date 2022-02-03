@@ -5,8 +5,8 @@
 import 'dart:async' as _i3;
 
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:sfid_mobile/app/repositories/api/post_repository.dart' as _i2;
-import 'package:sfid_mobile/domains/post_domain.dart' as _i4;
+import 'package:soid_mobile/app/repositories/api/post_repository.dart' as _i2;
+import 'package:soid_mobile/domains/post_domain.dart' as _i4;
 
 // ignore_for_file: avoid_redundant_argument_values
 // ignore_for_file: comment_references

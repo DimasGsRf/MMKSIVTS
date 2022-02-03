@@ -1,5 +1,5 @@
 import 'package:injector/injector.dart';
-import 'package:sfid_mobile/app/ui/pages/post/controller.dart';
+import 'package:soid_mobile/app/ui/pages/post/controller.dart';
 
 class ControllerModule {
   static void init(Injector injector) {

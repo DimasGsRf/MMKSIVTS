@@ -2,9 +2,9 @@ import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:sfid_mobile/app/ui/pages/post/presenter.dart';
-import 'package:sfid_mobile/domains/post_domain.dart';
-import 'package:sfid_mobile/use_cases/post/get_posts_use_case.dart';
+import 'package:soid_mobile/app/ui/pages/post/presenter.dart';
+import 'package:soid_mobile/domains/post_domain.dart';
+import 'package:soid_mobile/use_cases/post/get_posts_use_case.dart';
 
 import 'presenter.mocks.dart';
 

@@ -4,9 +4,9 @@ import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:dio_http_cache/dio_http_cache.dart';
 import 'package:event_bus/event_bus.dart';
-import 'package:sfid_mobile/app/infrastructures/event/dio_error.dart';
-import 'package:sfid_mobile/app/infrastructures/event/dio_success.dart';
-import 'package:sfid_mobile/data/infrastructures/api_service_interface.dart';
+import 'package:soid_mobile/app/infrastructures/event/dio_error.dart';
+import 'package:soid_mobile/app/infrastructures/event/dio_success.dart';
+import 'package:soid_mobile/data/infrastructures/api_service_interface.dart';
 
 class ApiService extends ApiServiceInterface {
   late Dio dio;
